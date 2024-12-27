@@ -1,4 +1,4 @@
-function LinearSearch(arr, value) {
+export function LinearSearch(arr, value) {
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] === value) {
             return i;
@@ -7,7 +7,7 @@ function LinearSearch(arr, value) {
     return -1;
 }
 
-function BinarySearch(arr, value) {
+export function BinarySearch(arr, value) {
     let left = 0;
     let right = arr.length - 1;
     while (left <= right) {
@@ -24,4 +24,3 @@ function BinarySearch(arr, value) {
     return -1;
 }
 
-module.exports = {LinearSearch, BinarySearch};
